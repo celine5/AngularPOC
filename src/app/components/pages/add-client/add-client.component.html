@@ -1,0 +1,54 @@
+<div class="card">
+<form [formGroup]="clientForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-title>
+        <h3>Add Client</h3>
+    </div>
+    <div mat-dialog-content>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" required formControlName="name">
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Company Name</mat-label>
+                <input matInput type="text" required formControlName="companyName" >
+              </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" required formControlName="email">
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Mobile</mat-label>
+                <input matInput type="number" required formControlName="mobile">
+              </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Date</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="date">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Currency</mat-label>
+                <input matInput type="text" required formControlName="currency">
+              </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Billing Method</mat-label>
+                <mat-select formControlName="department" formControlName="billingMethod">
+                  <mat-option *ngFor="let val of billingMethod" [value]="val">{{val}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-action>
+        <button mat-raised-button>Cancel</button>
+        <button mat-raised-button color="primary" type="submit">Save</button>
+    </div>
+</form>
+</div>

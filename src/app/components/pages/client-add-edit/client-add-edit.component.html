@@ -1,0 +1,41 @@
+<div mat-dialog-title>
+    <h3>Client Form</h3>
+</div>
+<form [formGroup]="clientForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" placeholder="annie John" formControlName="name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile</mat-label>
+        <input matInput type="number" placeholder="123456789" formControlName="mobile">
+      </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="xyz@gmail.com" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Company Name</mat-label>
+          <input matInput type="text" placeholder="abc Infotech" formControlName="companyName">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Currency</mat-label>
+          <input matInput type="text" placeholder="euro" formControlName="currency">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Billing Method</mat-label>
+          <input matInput type="text" placeholder="Fixed Price" formControlName="billingMethod">
+        </mat-form-field>
+      </div>
+</div>
+<div mat-dialog-action class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button type="submit" color="primary">{{data? 'Update' : 'Save'}}</button>
+</div>
+</form>

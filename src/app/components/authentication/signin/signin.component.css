@@ -1,0 +1,50 @@
+.sign {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+.col-rightside h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.col-rightside p {
+   color:#96a2b4;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.col-rightside p span { 
+    color:#3699ff;
+}
+.signinform  h3 {
+    font-size: 25px;
+    color:#000;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+input  {
+    height: 35px;
+    width: 300px;
+    padding: 2px 10px;
+}
+.sigin-btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #3699ff;
+    border: 1px solid #3699ff;
+    color:#fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}

@@ -1,0 +1,66 @@
+<div class="card">
+  <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-title>
+    <h2>Add Employee</h2>
+</div>
+<div mat-dialog-content>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" required formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" required formControlName="lastName">
+      </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Gender</mat-label>
+            <mat-select formControlName="gender">
+              <mat-option *ngFor="let val of gender" [value]="val">{{val}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Mobile</mat-label>
+            <input matInput type="number" required formControlName="mobile">
+          </mat-form-field> 
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Designation</mat-label>
+            <input matInput type="text" required formControlName="designation">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Select Department</mat-label>
+            <mat-select formControlName="department">
+              <mat-option *ngFor="let val of department" [value]="val">{{val}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>email</mat-label>
+            <input matInput type="email" required formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date of birth</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dob">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field >
+            <mat-label>Education</mat-label>
+            <textarea matInput formControlName="education"></textarea>
+          </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-action class="action">
+    <button mat-raised-button type="button">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+</form>
+</div>

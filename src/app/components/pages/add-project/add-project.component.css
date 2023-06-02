@@ -1,0 +1,21 @@
+.card{
+    padding: 15px;
+}
+form{
+    background-color: #fff;
+    border-radius: 10px;
+    color: darkgrey;
+    padding: 15px;
+    
+}
+.row{
+    display: flex;
+    gap:10px;
+    padding-top: 10px;
+}
+mat-form-field{
+    width: 100%;
+}
+.action{
+    gap: 5px;
+}

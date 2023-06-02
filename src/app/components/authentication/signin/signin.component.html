@@ -1,0 +1,24 @@
+<div class="sign">
+    <div class="col-lefside">
+        <img src="../../../../assets/img/bg-04.png" alt="">
+    </div>
+    <div class="col-rightside">
+        <h2>welcome to Excelencia</h2>
+        <p>Need a account? <span routerLink="/authentication/signup">sign up</span></p>
+        <div class="signinform">
+            <h3>Sign in</h3>
+              <form>
+                <div class="form-group">
+                    <label for="uname" class="label">User Name:</label>
+                    <input type="text" name="username" [(ngModel)]="username">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="label">Password:</label>
+                    <input type="password" name="password" [(ngModel)]="password">
+                </div>
+                 <button class="sigin-btn" type="submit" (click)="loginUser()">Signin</button>
+              </form> 
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,46 @@
+<div class="dashboard">
+  <div class="title">dashboard</div>
+  <div class="main-contnet">
+    <div class="card-row">
+      <div class="card">
+        <div class="card-title">total projects</div>
+        <div class="card-total">50</div>
+      </div>
+      <div class="card">
+        <div class="card-title">total clients</div>
+        <div class="card-total">50</div>
+      </div>
+      <div class="card">
+        <div class="card-title">total empolyees</div>
+        <div class="card-total">50</div>
+      </div>
+    </div>
+  </div>
+  <div class="charts">
+   <div class="chart-card">
+    <p clss="card-title">Employee Performance</p>
+    <canvas id="MyChart">{{ chart }}</canvas>
+   </div>
+  <div class="chart-card">
+    <p clss="card-title">Country Wise Clients </p>
+    <canvas id="MydChart">{{ dchart }}</canvas>
+    <tbody>
+    <tr>
+      <td >India </td><br>
+      <td>23 </td><br>
+      <td>+32%</td><br>
+    </tr>
+    <tr>
+      <td> USA</td><br>
+      <td>32 </td><br>
+      <td>+12%</td>
+    </tr>
+    <tr class="tr">
+      <td>Shrilanka </td><br>
+      <td>12 </td><br>
+      <td>-12%</td><br>
+    </tr>
+  </tbody>
+   </div>
+  </div>
+</div>

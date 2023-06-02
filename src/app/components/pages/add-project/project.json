@@ -1,0 +1,36 @@
+{
+  "project": [
+    {
+      "projectId": "121",
+      "projectTitle": "ERP",
+      "department": "Development",
+      "projectPriority": "Medium",
+      "client": "ANNIE",
+      "price": 1200,
+      "projectStartdate": "2023-05-01T18:30:00.000Z",
+      "projectEnddate": "2023-05-29T18:30:00.000Z",
+      "teams": [
+        "janani",
+        "ramesh"
+      ],
+      "workStatus": "1",
+      "id": 1
+    },
+    {
+      "projectId": "121",
+      "projectTitle": "ERP",
+      "department": "Development",
+      "projectPriority": "Medium",
+      "client": "ANNIE",
+      "price": 1200,
+      "projectStartdate": "2023-05-01T18:30:00.000Z",
+      "projectEnddate": "2023-05-29T18:30:00.000Z",
+      "teams": [
+        "janani",
+        "ramesh"
+      ],
+      "workStatus": "1",
+      "id": 2
+    }
+  ]
+}

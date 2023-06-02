@@ -1,0 +1,40 @@
+{
+  "addEmployee": [
+    {
+      "firstName": "frans",
+      "lastName": "john",
+      "gender": "Female",
+      "mobile": 123456789,
+      "designation": "sr.employee",
+      "department": "Designing",
+      "email": "doll@gmail.com",
+      "dob": "2023-05-21T18:30:00.000Z",
+      "education": "BE",
+      "id": 1
+    },
+    {
+      "firstName": "frans",
+      "lastName": "john",
+      "gender": "Female",
+      "mobile": 123456789,
+      "designation": "sr.employee",
+      "department": "Designing",
+      "email": "doll@gmail.com",
+      "dob": "2023-05-21T18:30:00.000Z",
+      "education": "BE",
+      "id": 2
+    },
+    {
+      "firstName": "john",
+      "lastName": "robert",
+      "gender": "Male",
+      "mobile": 1234567890,
+      "designation": "Developer",
+      "department": "Development",
+      "email": "john@gmail.com",
+      "dob": "2023-05-31T18:30:00.000Z",
+      "education": "BE",
+      "id": 3
+    }
+  ]
+}

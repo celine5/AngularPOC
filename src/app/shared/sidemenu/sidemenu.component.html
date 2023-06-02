@@ -1,0 +1,43 @@
+ 
+<div class="wrapper">
+     <div class="sidebar"> 
+        <!-- profile image and text -->
+        <!-- menu items -->
+         <div class="profile">
+            <div class="profile-logo">
+                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture">
+            </div>
+            <h3>Anamika Roy</h3>
+            <p>Designer</p>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a routerLink="/dashboard">Dashboard</a></li>
+                <li (click)="drop('menu1')">Projects<img src="../../../assets/img/icons/chevron-down.svg" class="icon">
+                    <span class="dropdown" *ngIf="id === 'menu1'">
+                    <ul>
+                        <li><a routerLink="all-projects">all projects</a></li>
+                        <li><a routerLink="add-project">add projects</a></li>
+                    </ul>
+                    </span>
+                </li>
+                <li (click)="drop('menu2')">clients<img src="../../../assets/img/icons/chevron-down.svg" class="icon">
+                    <span class="dropdown" *ngIf="id === 'menu2'">
+                    <ul>
+                        <li><a routerLink="all-clients">all clients</a></li>
+                        <li><a routerLink="add-client">add client</a></li>
+                    </ul>
+                </span>
+                </li>
+                <li (click)="drop('menu3')">empolyess<img src="../../../assets/img/icons/chevron-down.svg" class="icon">
+                    <span class="dropdown" *ngIf="id === 'menu3'">
+                    <ul>
+                        <li><a routerLink="all-employees">all employees</a></li>
+                        <li><a routerLink="add-employee">add employee</a></li>
+                    </ul>
+                </span>
+                </li>
+            </ul>
+        </div>
+     </div>
+</div> 

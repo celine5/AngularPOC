@@ -1,0 +1,82 @@
+<div class="card">
+        <div mat-dialog-title>
+            <h3>Add Project</h3>
+        </div>
+        <form [formGroup]="projectForm" (ngSubmit)="onFormSubmit()">
+        <div mat-dialog-content class="content">
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Project ID</mat-label>
+                    <input matInput type="text" required formControlName="projectId">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Project Title</mat-label>
+                    <input matInput type="text" required formControlName="projectTitle">
+                  </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Department</mat-label>
+                    <mat-select required formControlName="department">
+                      <mat-option *ngFor="let val of department" [value]="val">{{val}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Project Priority</mat-label>
+                    <mat-select required formControlName="projectPriority">
+                      <mat-option *ngFor="let val of projectPriority " [value]="val">{{val}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Client</mat-label>
+                    <input matInput type="text" required formControlName="client">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Price</mat-label>
+                    <input matInput type="number" required formControlName="price">
+                  </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Project Start Date</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="projectStartdate" >
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Project End Date</mat-label>
+                    <input matInput [matDatepicker]="picker1" formControlName="projectEnddate" >
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+            </div>
+             <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Teams</mat-label>
+                    <mat-select [formControl]="teams" multiple required formControlName="teams">
+                      <mat-option *ngFor="let val of teamsList" [value]="val">{{val}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>      
+            </div> 
+            <div class="row">
+                <mat-radio-group aria-label="Select an option" formControlName="workStatus">
+                    <mat-label><b>Work Status</b></mat-label>
+                    <mat-radio-button value="1">Active</mat-radio-button>
+                    <mat-radio-button value="2">Completed</mat-radio-button>
+                    <mat-radio-button value="1">Running</mat-radio-button>
+                    <mat-radio-button value="1">Pending</mat-radio-button>
+                    <mat-radio-button value="1">Not Started</mat-radio-button>
+                    <mat-radio-button value="1">Cancled</mat-radio-button>
+                  </mat-radio-group>
+            </div>
+        </div>
+        <div mat-dialog-action class="action">
+            <button mat-raised-button>Cancel</button>
+            <button mat-raised-button color="primary" type="submit">Save</button>
+        </div>
+    </form>
+</div>

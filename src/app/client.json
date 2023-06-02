@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "clients": [
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "abc company",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 1
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "xyz infotech",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 2
+    },
+    {
+      "name": "doll doll",
+      "mobile": "",
+      "email": "doll@gmail.com",
+      "companyName": "google",
+      "currency": "euro",
+      "billingMethod": "fixed",
+      "id": 3
+    },
+    {
+      "name": "annie",
+      "mobile": 123456789,
+      "email": "doll@gmail.com",
+      "companyName": "google",
+      "currency": "euro",
+      "billingMethod": "fixed price",
+      "id": 4
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "infotech",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 5
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "abc company",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 6
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "abc company",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 7
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "company",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 8
+    },
+    {
+      "name": "john robert",
+      "mobile": 1234567890,
+      "email": "john@gmail.com",
+      "companyName": "abc company",
+      "currency": "euro",
+      "billingMethod": "Fixed Price",
+      "id": 9
+    }
+  ]
+}
